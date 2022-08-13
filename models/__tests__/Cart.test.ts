@@ -46,7 +46,7 @@ describe("Testing for Cart class", () => {
     keranjang.tambahProduk("Apel Merah", 2);
     keranjang.tampilkanCart();
 
-    expect(logSpy).toHaveBeenCalledWith("Pisang Hijau (1)\nApel Merah (2)\n");
+    expect(logSpy).toHaveBeenCalledWith("Pisang Hijau (1)\nApel Merah (2)");
   });
 
   test("should be able to display error message when Cart is empty", () => {

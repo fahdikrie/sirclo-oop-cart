@@ -9,6 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 7.2.1
     - name: install deps
       run: pnpm install
     - name: run tests

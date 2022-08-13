@@ -24,6 +24,10 @@ describe("Test suite for Cart class", () => {
     expect(keranjang.getKuantitasProduk("Apel Merah")).toEqual(12);
   });
 
+  test("should return 0 quantity for nonexistent Produk", () => {
+    expect(keranjang.getKuantitasProduk("Nasi Uduk")).toEqual(0);
+  });
+
   /** Test suite for `hapusProduk` */
   test("should be able to delete Produk from Cart", () => {
     keranjang.tambahProduk("Pisang Hijau", 1);

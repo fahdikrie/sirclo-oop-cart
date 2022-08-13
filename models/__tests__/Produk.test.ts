@@ -1,6 +1,6 @@
 import Produk from "../Produk";
 
-describe("Testing for Cart class", () => {
+describe("Test suite for Cart class", () => {
   const pisangHijau = new Produk("Pisang Hijau", 1);
 
   /** Test suite for `tambahKuantitas` */

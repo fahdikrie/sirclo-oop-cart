@@ -1,6 +1,6 @@
 import Cart from "../Cart";
 
-describe("Testing for Cart class", () => {
+describe("Test suite for Cart class", () => {
   const keranjang = new Cart();
 
   beforeEach(() => {

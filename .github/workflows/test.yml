@@ -9,5 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: run jest
-      uses: stefanoeb/jest-action@1.0.3
+    - name: install deps
+      run: pnpm install
+    - name: run tests
+      run: pnpm test:cov

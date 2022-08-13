@@ -1,13 +1,8 @@
 import Cart from "../models/Cart";
 
 describe("Test suite for index.ts", () => {
-  let keranjang: any;
-  let logSpy: any;
-
-  beforeAll(() => {
-    logSpy = jest.spyOn(console, 'log');
-    keranjang = new Cart();
-  })
+  const keranjang = new Cart();
+  const logSpy = jest.spyOn(console, 'log');
 
   test("index should be able to produce the right output", () => {
     keranjang.tambahProduk("Pisang Hijau", 2);
